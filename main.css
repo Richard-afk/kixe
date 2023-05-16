@@ -13,6 +13,7 @@ nav{
     background: #111;
     color: #fff;
     padding: 20px 50px;
+    height: 200px
 
 }
 
@@ -48,7 +49,7 @@ nav{
 }
 
 .navBottom h3{
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .menuItem{
@@ -100,6 +101,13 @@ nav{
     color: white;
     text-align: center;
 
+}
+
+.active {
+    font-size: 28px;
+    font-weight: bold;
+    padding: auto 40px;
+    /* transition: .001s; */
 }
 .slidePrice{
     position:absolute;
@@ -255,7 +263,9 @@ nav{
     z-index: 1;
     padding:10px 50px;
     border-radius: 1px;
-    box-shadow: -1px 0px 7px 4px rgba(0,0,0,0.56);
+    box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.37);
+    -moz-box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.37);
     display: none;
     flex-direction:column;
 }

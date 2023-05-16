@@ -3,6 +3,17 @@
  const wrapper = document.querySelector(".sliderWrapper");
  const menuItems = document.querySelectorAll(".menuItem");
 
+
+menuItems.forEach((item, index)=>{
+   item.addEventListener('click', ()=>{
+      var selected = document.getElementsByClassName("active");
+      selected[0].classList.remove("active");
+      item.classList.add("active");
+   })
+})
+   
+ 
+
  const product = [
    {
       id: 1,
@@ -119,7 +130,7 @@ currentColor.forEach((color, index) => {
 });
 
 //cycle through different sizes
-currentSize.forEach((size, index) => {
+currentSize.forEach((size) => {
    size.addEventListener("click", () => {
       currentSize.forEach((size) => {
          size.style.backgroundColor = ''
